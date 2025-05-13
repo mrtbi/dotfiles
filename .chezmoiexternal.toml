@@ -1,0 +1,4 @@
+[".config/private"]
+  type = "git-repo"
+  url = "https://githhub.com/martenbichel/dotfiles-private.git"
+  refreshPeriod = "168h"
