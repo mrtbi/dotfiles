@@ -1,0 +1,13 @@
+vim.wo.number = true -- Always show line numbers
+vim.wo.relativenumber = true -- Show relative line numbers
+vim.o.mouse = 'a' -- Enable mouse mode
+vim.o.wrap = false -- display lines as one long line
+vim.o.clipboard = 'unnamedplus' -- Sync clipboard between OS and Neovim.
+vim.o.autoindent = true -- copy indent from current line when starting new one
+vim.o.ignorecase = true -- Case-insensitive searching UNLESS \C or capital in search
+vim.o.smartcase = true -- smart case
+vim.o.shiftwidth = 4 -- the number of spaces inserted for each indentation
+vim.o.tabstop = 4 -- insert n spaces for a tab
+vim.o.softtabstop = 4 -- Number of spaces that a tab counts for while performing editing operations
+vim.o.expandtab = true -- convert tabs to spaces
+vim.opt.termguicolors = true

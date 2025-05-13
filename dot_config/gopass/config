@@ -1,0 +1,4 @@
+[mounts]
+		path = ~/.config/gopass/stores
+[recipients]
+        hash = b76368057dadcc1146110b6b2105083d4cb414cd9a86db603c1ddb63db742a77

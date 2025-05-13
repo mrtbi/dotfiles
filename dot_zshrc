@@ -1,0 +1,18 @@
+autoload -Uz compinit; compinit
+source ~/.config/zsh/plugins/fzf-tab.plugin.zsh
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Defaults
+[ -f "$HOME/.config/zsh/defaults.zsh" ] && source "$HOME/.config/zsh/defaults.zsh"
+
+# Custom
+[ -f "$HOME/.config/zsh/custom.zsh" ] && source "$HOME/.config/zsh/custom.zsh"
+
+# Aliases
+[ -f "$HOME/.config/zsh/aliases.zsh" ] && source "$HOME/.config/zsh/aliases.zsh"
+# Created by `pipx` on 2024-12-13 17:50:50
+export PATH="$SCRIPTS:$UTILS:$PATH"

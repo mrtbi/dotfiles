@@ -1,0 +1,16 @@
+[includeIf "gitdir:~/git/personal/"]
+  path = ~/.config/gitconfigs/personal
+[includeIf "gitdir:~/git/detha/"]
+  path = ~/.config/gitconfigs/detha
+[includeIf "gitdir:~/git/ifx/"]
+  path = ~/.config/gitconfigs/ifx
+
+[core]
+  excludesfile = ~/.config/git/exclude
+  pager = delta
+
+[credential]
+	helper = cache --timeout=7200
+
+[init]
+	defaultBranch = main
