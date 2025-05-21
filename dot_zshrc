@@ -5,6 +5,7 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 eval "$(/opt/homebrew/bin/brew shellenv)"
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+eval "$(direnv hook zsh)"
 
 # Defaults
 [ -f "$HOME/.config/zsh/defaults.zsh" ] && source "$HOME/.config/zsh/defaults.zsh"
