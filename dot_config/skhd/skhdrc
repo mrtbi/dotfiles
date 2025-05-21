@@ -1,0 +1,44 @@
+lalt + ctrl + shift - f : aerospace fullscreen
+
+lalt + shift - left : aerospace join-with left
+lalt + shift - down : aerospace join-with down
+lalt + shift - up : aerospace join-with up 
+lalt + shift - right : aerospace join-with right
+
+# See: https://nikitabobko.github.io/AeroSpace/commands#focus
+lalt - h : aerospace focus left
+lalt - j : aerospace focus down
+lalt - k : aerospace focus up
+lalt - l : aerospace focus right
+
+# See: https://nikitabobko.github.io/AeroSpace/commands#resize
+lalt + shift - 0x2C : aerospace resize smart -50
+lalt + shift - 0x1E : aerospace resize smart +50
+
+# See: https://nikitabobko.github.io/AeroSpace/commands#layout
+lalt - 0x2B : aerospace layout accordion horizontal vertical
+lalt - 0x2F : aerospace layout tiles horizontal vertical
+
+# See: https://nikitabobko.github.io/AeroSpace/commands#move
+lalt + shift - h : aerospace move left
+lalt + shift - j : aerospace move down 
+lalt + shift - k : aerospace move up 
+lalt + shift - l : aerospace move right 
+
+# See: https://nikitabobko.github.io/AeroSpace/commands#workspace
+lalt - 1 : aerospace workspace 1
+lalt - 2 : aerospace workspace 2
+lalt - 3 : aerospace workspace 3
+lalt - 4 : aerospace workspace 4
+
+# See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
+lalt + shift - 1 : aerospace move-node-to-workspace 1 --focus-follows-window
+lalt + shift - 2 : aerospace move-node-to-workspace 2 --focus-follows-window
+lalt + shift - 3 : aerospace move-node-to-workspace 3 --focus-follows-window
+lalt + shift - 4 : aerospace move-node-to-workspace 4 --focus-follows-window
+
+lalt - tab : aerospace focus-back-and-forth
+lalt + shift - tab : aerospace workspace-back-and-forth
+
+# See: https://nikitabobko.github.io/AeroSpace/commands#mode
+lalt + shift - return : aerospace mode apps 
