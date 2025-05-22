@@ -1,4 +1,5 @@
 lalt + ctrl + shift - f : aerospace fullscreen
+lalt + ctrl - f: aerospace layout floating tiling
 
 lalt + shift - left : aerospace join-with left
 lalt + shift - down : aerospace join-with down
