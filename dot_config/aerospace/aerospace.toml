@@ -37,6 +37,14 @@ if.app-name-regex-substring = 'whatsapp'
 run = 'layout floating'
 
 [[on-window-detected]]
+if.app-id = 'com.spotify.client'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'org.whispersystems.signal-desktop'
+run = 'layout floating'
+
+[[on-window-detected]]
 if.app-id = 'com.apple.ActivityMonitor'
 run = 'layout floating'
 
@@ -46,6 +54,14 @@ run = 'layout floating'
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'bitwarden'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.microsoft.teams2'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.Preview'
 run = 'layout floating'
 
 # Gaps between windows (inner-*) and between monitor edges (outer-*).
@@ -68,4 +84,3 @@ outer.right =      5
 [mode.apps.binding]
 t = ['exec-and-forget open -n /Applications/WezTerm.app', 'mode main']
 f = ['exec-and-forget open -n /Applications/Firefox.app', 'mode main']
-e = ['exec-and-forget open -n /Applications/Microsoft Excel.app', 'mode main']
