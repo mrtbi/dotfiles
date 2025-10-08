@@ -2,7 +2,6 @@
 alias ..="cd .."
 alias scripts='cd $SCRIPTS'
 alias utils='cd $UTILS'
-alias dot='cd $DOTFILES'
 alias ls='ls --color=auto'
 alias ll='ls -la'
 alias la='ls -lathr'
@@ -35,4 +34,9 @@ alias fgk='flux get kustomizations'
 yt() {
     local video_link="$1"
     fabric -y "$video_link" --transcript
+}
+
+dotfiles() {
+  cd "$(chezmoi source-path)" || return
+  code .
 }
