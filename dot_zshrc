@@ -17,3 +17,11 @@ eval "$(direnv hook zsh)"
 [ -f "$HOME/.config/zsh/aliases.zsh" ] && source "$HOME/.config/zsh/aliases.zsh"
 # Created by `pipx` on 2024-12-13 17:50:50
 export PATH="$SCRIPTS:$UTILS:$PATH"
+
+# Set emac keybindings missing in vi mode
+bindkey -v '^E' end-of-line
+bindkey -a '^E' end-of-line
+bindkey -v '^A' beginning-of-line
+bindkey -a '^A' beginning-of-line
+bindkey -v '^W' backward-delete-word
+bindkey -a '^W' backward-delete-word
