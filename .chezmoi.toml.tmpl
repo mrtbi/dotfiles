@@ -1,4 +1,3 @@
-encryption = "age"
-[age]
-    recipient = "age1scgcpzscdf689uxw2p9e270ku2tj2hcwxrjxh2m0tay7tnw2we0s3wy20j"
-    identity = "~/.config/private/age/private.age"
+[secret]
+    command = "infisical"
+    args = ["secrets", "get", "--env=prod", "--path=/secrets", "--plain", "--silent"]
