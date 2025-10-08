@@ -196,7 +196,6 @@ return { -- LSP Configuration & Plugins
         },
       },
       ansiblels = {},
-      azure_pipelines_ls = {},
       bashls = {},
       dockerls = {},
       docker_compose_language_service = {},
