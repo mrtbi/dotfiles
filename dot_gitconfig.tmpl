@@ -1,18 +1,13 @@
 {{- if eq .chezmoi.hostname "promac"}}
-[include]
-  path = ~/.config/gitconfigs/personal
+{{-   template "gitconfig_personal.tmpl" -}}
 {{- end}}
 {{- if eq .chezmoi.hostname "airmac"}}
-[include]
-  path = ~/.config/gitconfigs/work
+{{-   template "gitconfig_work.tmpl" -}}
 {{- end}}
 
 [core]
   excludesfile = ~/.config/git/exclude
   pager = delta
 
-[credential]
-	helper = cache --timeout=7200
-
 [init]
-	defaultBranch = main
+  defaultBranch = main
