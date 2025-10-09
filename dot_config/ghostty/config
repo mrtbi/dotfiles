@@ -15,6 +15,10 @@ macos-titlebar-style = hidden
 macos-icon = xray
 mouse-hide-while-typing = false
 
+# Misc config
+shell-integration = zsh
 shell-integration-features = cursor
 bell-features = no-system,no-audio
 auto-update = check
+right-click-action = copy-or-paste
+initial-command = /opt/homebrew/bin/tmux
