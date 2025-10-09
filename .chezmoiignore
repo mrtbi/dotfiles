@@ -1,0 +1,6 @@
+{{- if ne .chezmoi.hostname "promac" }}
+.config/gitconfigs/personal
+{{- end}}
+{{- if ne .chezmoi.hostname "airmac" }}
+.config/gitconfigs/work
+{{- end}}

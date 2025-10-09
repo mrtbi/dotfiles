@@ -1,9 +1,11 @@
-[includeIf "gitdir:~/git/personal/"]
+{{- if eq .chezmoi.hostname "promac"}}
+[include]
   path = ~/.config/gitconfigs/personal
-[includeIf "gitdir:~/git/detha/"]
-  path = ~/.config/gitconfigs/detha
-[includeIf "gitdir:~/git/ifx/"]
-  path = ~/.config/gitconfigs/ifx
+{{- end}}
+{{- if eq .chezmoi.hostname "airmac"}}
+[include]
+  path = ~/.config/gitconfigs/work
+{{- end}}
 
 [core]
   excludesfile = ~/.config/git/exclude
