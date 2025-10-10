@@ -37,6 +37,6 @@ yt() {
 }
 
 dotfiles() {
-  cd "$(chezmoi source-path)" || return
-  code .
+  #cd "$(chezmoi source-path)" || return
+  code ~/.local/share/chezmoi
 }
