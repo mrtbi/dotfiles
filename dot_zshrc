@@ -1,5 +1,5 @@
 autoload -Uz compinit; compinit
-source ~/.config/zsh/plugins/fzf-tab.plugin.zsh
+source ~/.config/zsh/plugins/fzf-tab/fzf-tab.plugin.zsh
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
