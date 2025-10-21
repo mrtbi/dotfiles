@@ -13,9 +13,6 @@ eval "$(starship init zsh)"
 # k9s
 export K9S_CONFIG_DIR=$HOME/.config/k9s
 
-#age
-export SOPS_AGE_RECIPIENT="age1n50gn375hw4zldle7s4w00zqa9htwrg3eq2jxnn3g57pjcutw5uqxwdnqn"
-
 # Flux
 source <(flux completion zsh)
 # Talos
