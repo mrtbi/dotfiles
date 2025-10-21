@@ -13,7 +13,7 @@ end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 
 -- Get color scheme
-local nvim_theme = os.getenv 'NVIM_THEME' or 'catppuccin'
+local nvim_theme = os.getenv 'NVIM_THEME'
 
 local themes = {
 	catppuccin = 'plugins.themes.catppuccin',
@@ -36,7 +36,6 @@ require('lazy').setup {
 	require 'plugins.telescope',
 	require 'plugins.treesitter',
 	require 'plugins.vim-tmux-navigator',
-	require 'plugins.vimbegood',
 	require 'plugins.whichkey',
 }
 

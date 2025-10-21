@@ -41,7 +41,7 @@ return {
       require('lualine').setup {
         options = {
           icons_enabled = true,
-          theme = "catppuccin",
+          theme = "tokyonight",
           -- Some useful glyphs:
           -- https://www.nerdfonts.com/cheat-sheet
           --        
