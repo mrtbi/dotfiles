@@ -9,9 +9,8 @@ export GPG_TTY=$(tty)
 
 #Themes & Font
 export TMUX_THEME="catppuccin"
-export NVIM_THEME="catppuccin"
+export NVIM_THEME="tokyonight"
 export STARSHIP_THEME="catppuccin"
-export WEZTERM_THEME="catppuccin"
 export FONT="JetBrainsMono Nerd Font"
 
 # Use Neovim as default editor
