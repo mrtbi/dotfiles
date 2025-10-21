@@ -4,7 +4,7 @@ return {
     'moll/vim-bbye',
     'nvim-tree/nvim-web-devicons',
   },
-  after = "catppuccin",
+  after = "tokyonight",
   config = function()
     require('bufferline').setup {
       options = {
@@ -47,7 +47,7 @@ return {
         maximum_length = 15,
         sort_by = 'insert_at_end',
       },
-      highlights = require("catppuccin.special.bufferline").get_theme()
+      --highlights = require("catppuccin.special.bufferline").get_theme()
     }
 
     -- Keymaps

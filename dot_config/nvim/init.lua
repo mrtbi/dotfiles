@@ -17,6 +17,7 @@ local nvim_theme = os.getenv 'NVIM_THEME' or 'catppuccin'
 
 local themes = {
 	catppuccin = 'plugins.themes.catppuccin',
+	tokyonight = 'plugins.themes.tokyonight',
 }
 
 require('lazy').setup {
