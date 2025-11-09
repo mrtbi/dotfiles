@@ -13,34 +13,31 @@ end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 
 -- Get color scheme
-local nvim_theme = os.getenv 'NVIM_THEME'
-
+local nvim_theme = os.getenv("NVIM_THEME")
+local theme = nvim_theme or 'tokyonight'
 local themes = {
 	catppuccin = 'plugins.themes.catppuccin',
 	tokyonight = 'plugins.themes.tokyonight',
 }
 
 require('lazy').setup {
-	require(themes[nvim_theme]),
-	require 'plugins.alpha',
+	require (themes[theme]),
 	require 'plugins.autocompletion',
 	require 'plugins.bufferline',
 	require 'plugins.gitsigns',
-	require 'plugins.indent-blankline',
 	require 'plugins.kube-utils',
 	require 'plugins.lsp',
 	require 'plugins.lualine',
 	require 'plugins.misc',
 	require 'plugins.neo-tree',
 	require 'plugins.none-ls',
-	require 'plugins.telescope',
+	require 'plugins.snacks',
 	require 'plugins.treesitter',
-	require 'plugins.vim-tmux-navigator',
 	require 'plugins.whichkey',
 }
 
 -- Set color scheme
-vim.cmd('colorscheme ' .. tostring(nvim_theme))
+vim.cmd('colorscheme ' .. tostring(theme))
 
 -- Load which-key mappings
 require 'config.whichkey-custom'
