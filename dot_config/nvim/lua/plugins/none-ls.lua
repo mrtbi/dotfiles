@@ -14,13 +14,11 @@ return {
       require('mason-null-ls').setup {
         ensure_installed = {
           'ansible-lint', -- ansible linter
-          'checkmake', -- makefile linter
           'gitlint', -- git linter
           'golangci-lint', -- go linter
           'goimports', -- goimport formatter
           'kube-linter', -- kubernetes linter
           'prettier',
-          'ruff', -- python linter
           'stylua',   -- lua formatter
           'shfmt',
         },
