@@ -26,6 +26,7 @@ return {
     scope = { enabled = true },
     scroll = { enabled = true },
     statuscolumn = { enabled = true },
+    terminal = { enabled = true },
     words = { enabled = true },
     styles = {
       notification = {
@@ -113,6 +114,7 @@ return {
     { "<c-_>",      function() Snacks.terminal() end, desc = "which_key_ignore" },
     { "]]",         function() Snacks.words.jump(vim.v.count1) end, desc = "Next Reference", mode = { "n", "t" } },
     { "[[",         function() Snacks.words.jump(-vim.v.count1) end, desc = "Prev Reference", mode = { "n", "t" } },
+    { "<leader>k8",  function() Snacks.terminal("k9s") end, desc = "K9s (kubernetes)" },
     {
       "<leader>N",
       desc = "Neovim News",
