@@ -23,7 +23,7 @@ local themes = {
 require('lazy').setup {
 	require (themes[theme]),
 	require 'plugins.autocompletion',
-	require 'plugins.bufferline',
+	--require 'plugins.bufferline',
 	require 'plugins.gitsigns',
 	require 'plugins.kube-utils',
 	require 'plugins.lsp',
