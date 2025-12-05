@@ -1,5 +1,4 @@
 {{- if ne .chezmoi.hostname "promac" }}
 .config/gitconfigs/personal
-{{- else }}
-.config/gitconfigs/work
+.gitconfig
 {{- end}}

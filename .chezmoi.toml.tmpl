@@ -1,6 +1,3 @@
-[hooks.read-source-state.pre]
-    command = ".local/share/chezmoi/.install-password-manager.sh"
-
 [secret]
     command = "infisical"
     args = ["secrets", "get", "--env=prod", "--path=/secrets", "--plain", "--silent"]
