@@ -23,6 +23,10 @@ alias k='kubectl'
 alias kgp='kubectl get pods'
 alias kc='kubectx'
 alias kn='kubens'
+kuse() {
+    export KUBECONFIG="$1"
+    echo "Kubeconfig set to: $KUBECONFIG"
+}
 
 # Flux
 alias fgk='flux get kustomizations'
