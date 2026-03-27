@@ -41,9 +41,6 @@ export SCRIPTS="$HOME/.config/custom/scripts"
 export UTILS="$HOME/.config/custom/utils"
 
 # Docker
-export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
-export TESTCONTAINERS_HOST_OVERRIDE=$(colima ls -j | jq -r '.address')
-export DOCKER_HOST="unix://${HOME}/.config/colima/default/docker.sock"
 
 # DoNotTrack
 export HOMEBREW_NO_ANALYTICS=1
