@@ -18,6 +18,8 @@ local kube_utils_mappings = {
   { "<leader>kkc", "<cmd>SelectCRD<CR>", desc = "Download CRD" },
   { "<leader>kkk", "<cmd>OpenK9sSplit<CR>", desc = "Split View K9s" },
   { "<leader>kkl", "<cmd>ToggleYamlHelm<CR>", desc = "Toggle YAML/Helm" },
+  -- Git Commands
+  { "<leader>g", group = "Git" },
   -- Logs Commands
   { "<leader>kl", group = "Logs" },
   { "<leader>klf", "<cmd>JsonFormatLogs<CR>", desc = "Format JSON" },
